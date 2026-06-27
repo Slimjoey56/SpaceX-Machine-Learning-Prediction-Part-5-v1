@@ -60,5 +60,5 @@ SpaceX-Machine-Learning-Prediction/
 This project strengthened my understanding of supervised machine learning, cross-validation, hyperparameter tuning, and predictive modeling using Python and Scikit-learn. It also provided practical experience comparing multiple classification algorithms to determine the most effective model for a real-world prediction problem.
 
 ---
-**Author:** Joey Brobbey Impiani  
+**Author:** Jehosaphat Brobbey Impiani  
 **Program:** IBM Data Science Professional Certificate
