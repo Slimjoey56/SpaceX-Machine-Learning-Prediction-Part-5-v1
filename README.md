@@ -41,13 +41,17 @@ Successful first-stage landings are relevant to reusable launch systems. This pr
 
 ## Getting Started
 
-Install the libraries imported by the notebook, launch Jupyter, and open the notebook:
+Create an environment and install the pinned-minimum dependencies:
 
 ```bash
+python -m venv .venv
+# Windows PowerShell: .venv\\Scripts\\Activate.ps1
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements.txt
 jupyter notebook
 ```
 
-Run the cells in order. The repository currently does not include the `dataset.csv` or `requirements.txt` files referenced in the previous README, so review the notebook for its actual data source.
+The notebook downloads its modelling inputs directly from the IBM Skills Network-hosted CSV resources (`dataset_part_2.csv` and `dataset_part_3.csv`) using `pandas.read_csv` URLs embedded in the notebook. Those source files are not bundled in this repository; an internet connection is required when executing the data-loading cells. The notebook itself is the reproducible analysis entry point.
 
 ## Evaluation
 
