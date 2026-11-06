@@ -1,64 +1,70 @@
-# SpaceX-Machine-Learning-Prediction-Part-5-v1
-Completed another hands-on project in the IBM Data Science Professional Certificate. Built and evaluated Machine Learning models to predict SpaceX Falcon 9 landing outcomes using Logistic Regression, SVM, Decision Tree, and KNN with GridSearchCV for hyperparameter tuning.
+# SpaceX Falcon 9 Landing Prediction
 
-# SpaceX Machine Learning Prediction
+A supervised machine learning notebook comparing classification models for predicting first-stage booster landing outcomes.
 
-## Overview
-This project applies supervised machine learning techniques to predict whether the SpaceX Falcon 9 first-stage booster will successfully land. The project is part of the IBM Data Science Professional Certificate and demonstrates the complete machine learning workflow, from data preprocessing to model evaluation and selection.
+This project was completed as part of the IBM Data Science Professional Certificate capstone learning pathway.
 
-## Objectives
-- Prepare and preprocess the dataset.
-- Split the data into training and testing sets.
-- Train multiple classification models.
-- Optimize model performance using GridSearchCV.
-- Compare model accuracies to identify the best-performing algorithm.
+## Problem
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Jupyter Notebook
+Successful first-stage landings are relevant to reusable launch systems. This project examines whether historical launch characteristics can be used to classify landing outcomes.
 
-## Machine Learning Models
+## Models Compared
+
 - Logistic Regression
 - Support Vector Machine (SVM)
 - Decision Tree Classifier
 - K-Nearest Neighbors (KNN)
 
-## Methods
-- Data preprocessing
-- Feature scaling
-- Train-test split
-- Hyperparameter tuning with GridSearchCV
-- Cross-validation
-- Model evaluation and comparison
+## Workflow
 
-## Results
-The models were evaluated using classification accuracy on the test dataset after hyperparameter optimization. The project demonstrates how different algorithms perform on the same dataset and highlights the importance of model selection and parameter tuning.
+1. Prepare the modelling dataset.
+2. Split observations into training and test sets.
+3. Scale or transform features where required.
+4. Train classification models.
+5. Tune hyperparameters using GridSearchCV.
+6. Compare model performance on the test set.
 
-## Skills Demonstrated
-- Machine Learning
-- Classification
-- Hyperparameter Optimization
-- Model Evaluation
-- Data Preprocessing
-- Feature Engineering
-- Python Programming
-- Scikit-learn
+## Tools
 
-## Project Structure
-```
-SpaceX-Machine-Learning-Prediction/
-│
-├── SpaceX-Machine-Learning-Prediction-Part-5.ipynb
-├── README.md
-└── dataset.csv
+- Python
+- Pandas and NumPy
+- scikit-learn
+- Jupyter Notebook
+
+## Repository Contents
+
+```text
+.
+├── SpaceX-Machine-Learning-Prediction-Part-5-v1.ipynb
+└── README.md
 ```
 
-## Learning Outcomes
-This project strengthened my understanding of supervised machine learning, cross-validation, hyperparameter tuning, and predictive modeling using Python and Scikit-learn. It also provided practical experience comparing multiple classification algorithms to determine the most effective model for a real-world prediction problem.
+## Getting Started
 
----
-**Author:** Jehosaphat Brobbey Impiani  
-**Program:** IBM Data Science Professional Certificate
+Install the libraries imported by the notebook, launch Jupyter, and open the notebook:
+
+```bash
+jupyter notebook
+```
+
+Run the cells in order. The repository currently does not include the `dataset.csv` or `requirements.txt` files referenced in the previous README, so review the notebook for its actual data source.
+
+## Evaluation
+
+The notebook describes accuracy-based comparison following hyperparameter tuning. Exact performance figures should be taken from the notebook output rather than inferred from this README.
+
+For a stronger evaluation, document the test-set size, cross-validation strategy, confusion matrix, precision, recall, and F1-score. Ensure any fitted preprocessing steps are learned only from training data.
+
+## Limitations
+
+This is a course-based classification exercise, not a deployed prediction service. Model performance on a small historical dataset may not generalise to future launches.
+
+## Related Projects
+
+- [SpaceX Data EDA](https://github.com/Slimjoey56/spacex_launch_data_eda)
+- [SpaceX Launch Site Analysis](https://github.com/Slimjoey56/SpaceX-Launch-Site-Location-Analysis)
+
+## Author
+
+Jehosaphat Brobbey Impiani  
+[GitHub](https://github.com/Slimjoey56)
